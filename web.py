@@ -1,37 +1,40 @@
 from http.server import HTTPServer,BaseHTTPRequestHandler
 
-content='''<html>
+content='''
+<html>
 <head>
 <title> My Web Server</title>
 </head>
 <body>
     <center><table border="10" cellpadding="30">
-        <caption><h3>MY SYSTEM CONFIGURATION</caption></h3>
-        <tr bgcolor="yellow" style="color:black;">
-          <th bgcolor="antiquewhite">S.no</th><th>Item</th><th>value</th>
+        <caption><h3>My system information</caption></h3>
+        <tr bgcolor="grey" style="color:black;">
+          <th bgcolor="antiquewhite">S.no</th><th>hardwares</th><th>specs</th>
         </tr>
-        <tr bgcolor="antiquewhite" style="color:black;">
-          <th bgcolor="yellow" style="color:black;"> 1</td><th>OS Name</th><th>Microsoft Windows 10 Pro</th>
+        <tr bgcolor="antiquewhite" style="color:rgb(236, 18, 18);">
+          <th bgcolor="grey" style="color:rgb(2, 247, 35);"> 1</td><th>model</th><th>thinkpad</th>
         </tr>
-        <tr bgcolor="antiquewhite" style="color:black;">
-            <th bgcolor="yellow" style="color:black;">2</th><th>system manufacturer</th><th>HP</th>
+        <tr bgcolor="antiquewhite" style="color:rgb(245, 10, 10);">
+            <th bgcolor="grey" style="color:rgb(2, 247, 35);">2</th><th>system manufacturer</th><th>LENOVO</th>
           </tr>
-          <tr bgcolor="antiquewhite" style="color:black;">
-            <th bgcolor="yellow" style="color:black;">3</th><th>system model</th><th>elite book 840 g3</th>
+          <tr bgcolor="antiquewhite" style="color:rgb(244, 17, 17);">
+            <th bgcolor="grey" style="color:rgb(2, 247, 35);">3</th><th>operating system</th><th>windows 11</th>
           </tr>
-          <tr bgcolor="antiquewhite" style="color:black;">
-            <th bgcolor="yellow" style="color:black;">4</th><th>Ram</th><th>8 GB DDR4</th>
+          <tr bgcolor="antiquewhite" style="color:rgb(250, 9, 9);">
+            <th bgcolor="grey" style="color:rgb(2, 247, 35);">4</th><th>Ram</th><th>4gb</th>
           </tr>
-          <tr bgcolor="antiquewhite" style="color:black;">
-            <th bgcolor="yellow" style="color:black;">5</th><th>Processor</th><th>intel i5 6th gen</th>
+          <tr bgcolor="antiquewhite" style="color:rgb(250, 12, 12);">
+            <th bgcolor="grey" style="color:rgb(2, 247, 35);">5</th><th>Processor</th><th>intel</th>
           </tr>
-          <tr bgcolor="antiquewhite" style="color:black;">
-            <th bgcolor="yellow" style="color:black;">6</th><th>SSD</th><th>256 GB</th>
+          <tr bgcolor="antiquewhite" style="color:rgb(248, 9, 9);">
+            <th bgcolor="grey" style="color:rgb(2, 247, 35);">6</th><th>SSD</th><th>512 GB</th>
           </tr>
         </center>
 
 </body>
-</html>'''
+</html>
+
+'''
 
 
 class MyServer(BaseHTTPRequestHandler):
